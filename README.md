@@ -12,4 +12,6 @@ The application will open on localhost:3000 automatically.
 - Angular.js
 - npm
 - gulp
-- 
+- HTML
+- CSS (SCSS)
+- Jquery
