@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Demo for WedMeGood Interview Process">
+	<meta name="author" content="Deepank Agarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#C12563"/>
+	<title>Wedmegood | Demo</title>
+
+	<link rel="stylesheet" href="vendor/bootswatch.min.css">
+
+	<!-- inject:css -->
+  	<link rel="stylesheet" href="stylesheets/css/style.css">
+  	<!-- endinject -->
+
+</head>
+<body ng-app="wedMeGoodApp">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header center">
+				<a class="navbar-brand" href="#">Wed<strong>Me</strong>Good - The Game of Luck</a>
+			</div>
+		</div>
+	</nav>
+
+	<div ui-view></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<!-- inject:js -->
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/home.controller.js"></script>
+	<script src="javascripts/home.service.js"></script>
+	<!-- endinject -->
+</body>
+</html>

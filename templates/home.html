@@ -1,0 +1,41 @@
+<div class="container">
+
+	<div class="row prizes">
+		<div class="col-xs-12 center">
+			<p>Prizes Remaining!</p>
+		</div>
+		<div class="col-xs-12 col-md-4 center">
+			<p class="prize-list">Movie Tickets: {{prizes.movie_tickets}}</p>
+		</div>
+		<div class="col-xs-12 col-md-4 center">
+			<p class="prize-list">Mobile Phones: {{prizes.mobile_phones}}</p>
+		</div>
+		<div class="col-xs-12 col-md-4 center">
+			<p class="prize-list">Bike: {{prizes.bike}}</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="card in cards">
+			<div id="flip" class="flip" ng-click="showCard($index)">
+				<div class="card" ng-class="isFlipped[$index]">
+					<div class="face front">
+						<img src="{{card.imageUrl}}">
+					</div>
+					<div class="face back">{{card.movieName}}</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="overlay win">
+		<h1 ng-if="prizeWon.flag == 1">Congratulations!</h1>
+		<h4>{{prizeWon.message}}</h4>
+		<button ng-click="playAgain()" class="btn custom-btn">Play Again</button>
+	</div>
+	<div class="overlay loss">
+		<h1>Oops!</h1>
+		<h4>Better Luck Next Time!</h4>
+		<button ng-click="playAgain()" class="btn custom-btn">Play Again</button>
+	</div>
+
+</div>
