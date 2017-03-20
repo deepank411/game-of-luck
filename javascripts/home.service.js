@@ -13,7 +13,7 @@ app.service("homeService", function($q){
       for(var i = 1; i <= 8; i++){
          cards.push({
             id: i,
-            imageUrl: 'http://lorempixel.com/200/200/?' + i
+            imageUrl: 'https://lorempixel.com/200/200/?' + i
          });
       };
 
