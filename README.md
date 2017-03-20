@@ -1,4 +1,4 @@
-# WedMeGood - Demo
+# The Game of Luck - Demo
 
 This folder contains the code of the Tile Game Demo developed for WedMeGood.
 
