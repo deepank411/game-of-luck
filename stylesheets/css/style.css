@@ -13,6 +13,7 @@ html, body {
 
 .flip {
   -webkit-perspective: 800;
+  perspective: 800;
   width: 200px;
   height: 200px;
   position: relative;
@@ -25,14 +26,18 @@ html, body {
     width: 100%;
     height: 100%;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s; }
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    transform-style: 1s; }
     .flip .card.flipped {
       -webkit-transform: rotatey(-180deg);
+      transform: rotatey(-180deg);
       background: transparent; }
     .flip .card .face {
       width: 100%;
       height: 100%;
       position: absolute;
+      backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       z-index: 2;
       font-size: 3em;
@@ -47,6 +52,7 @@ html, body {
       cursor: pointer; }
     .flip .card .back {
       -webkit-transform: rotatey(-180deg);
+      transform: rotatey(-180deg);
       cursor: pointer;
       border: 5px #eee; }
 
@@ -69,7 +75,7 @@ html, body {
   flex-direction: column;
   background: linear-gradient(240deg, rgba(36, 102, 85, 0.8), rgba(36, 37, 102, 0.8)); }
 
-.overlay h2, .overlay h5 {
+.overlay h1, .overlay h4 {
   animation: fadeAndScale 2s;
   -webkit-animation: fadeAndScale 2s;
   animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
