@@ -1,6 +1,6 @@
 # The Game of Luck - Demo
 
-This folder contains the code of the Tile Game Demo developed for WedMeGood.
+This folder contains the code of the Tile Matching Game.
 
 ### Steps to run the code:
 - (sudo) npm install
